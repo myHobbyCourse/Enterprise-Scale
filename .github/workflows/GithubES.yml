@@ -31,6 +31,9 @@ jobs:
           subscriptionId: ${{ secrets.subscriptionId }}
           resourceGroupName: githubES
           template: "examples/policies/policy-definition/policy-definition.json" 
-          parameters: policyName=GithubES,policyDescription=GithubES,namePattern=GithubES
+          parameters: |
+            policyName=GithubES
+            policyDescription=GithubES
+            namePattern=GithubES
             
         
